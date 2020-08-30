@@ -1,0 +1,21 @@
+{
+  "name": "bravo-one-landing-2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bravo-one/bravo-one-landing-2.git"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2"
+  },
+  "dependencies": {
+    "compression": "1.7.4",
+    "envalid": "6.0.2",
+    "express": "4.17.1"
+  }
+}
