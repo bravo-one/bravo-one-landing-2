@@ -12,5 +12,10 @@
   },
   "devDependencies": {
     "gulp": "4.0.2"
+  },
+  "dependencies": {
+    "compression": "1.7.4",
+    "envalid": "6.0.2",
+    "express": "4.17.1"
   }
 }

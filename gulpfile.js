@@ -6,7 +6,7 @@ function buildHtml() {
 }
 
 function buildAssets() {
-    return src('src/assets/*')
+    return src('src/assets/**')
         .pipe(dest('build/assets/'));
 }
 
