@@ -305,9 +305,9 @@ img {
 
 /*BUTTONS*/
 .btn {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
-    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
+    background: #8731E8 linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
     color: #fff;
     line-height: 1;
     text-align: center;
@@ -319,6 +319,7 @@ img {
     z-index: 1;
 }
 
+
 .btn:hover,
 .btn:focus,
 .btn:active {
@@ -329,7 +330,7 @@ img {
 
 .btn.sApp-btn {
     background: transparent none repeat scroll 0 0;
-    color: #444;
+    color: #fff;
 }
 
 .btn.sApp-btn:hover,
