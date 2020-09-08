@@ -11,7 +11,8 @@
     "url": "git+https://github.com/bravo-one/bravo-one-landing-2.git"
   },
   "devDependencies": {
-    "gulp": "4.0.2"
+    "gulp": "4.0.2",
+    "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
     "compression": "1.7.4",

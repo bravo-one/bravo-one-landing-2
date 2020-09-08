@@ -1,4 +1,5 @@
-const { src, dest, parallel } = require('gulp');
+const { src, dest, parallel, series} = require('gulp');
+const imagemin = require('gulp-imagemin');
 
 function buildHtml() {
     return src('src/*.html')
@@ -10,4 +11,21 @@ function buildAssets() {
         .pipe(dest('build/assets/'));
 }
 
-exports.default = parallel(buildHtml, buildAssets);
+function buildImages() {
+    return src('src/assets/img/**')
+        .pipe(imagemin())
+        .pipe(dest('build/assets/img/'))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
+}
+
+exports.default = parallel(buildHtml, series(buildAssets, buildImages));
