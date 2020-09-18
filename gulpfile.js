@@ -16,11 +16,11 @@ function resizeImages() {
     return src('src/assets/img/**')
       .pipe(
         responsive({
-              '**.jpg': {
+              '**/*.jpg': {
                 quality: 50,
                 compressionLevel: 7,
               },
-              '**.png': {
+              '**/*.png': {
                 quality: 50,
                 compressionLevel: 7,
               },
