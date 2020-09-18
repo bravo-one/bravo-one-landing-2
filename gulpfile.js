@@ -18,6 +18,7 @@ function resizeImages() {
         responsive({
               '**.jpg': {
                 quality: 50,
+                compressionLevel: 7,
               },
               '**.png': {
                 quality: 50,
