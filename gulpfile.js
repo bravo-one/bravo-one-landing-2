@@ -30,7 +30,7 @@ function resizeImages() {
               'avatar/**': {
                 quality: 50,
                 compressionLevel: 7,
-                width: 100
+                width: 150
               },
               'bg/**': {
                 quality: 50,
