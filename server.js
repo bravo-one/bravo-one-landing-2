@@ -24,6 +24,8 @@ app.use(compression());
 
 // https://expressjs.com/en/starter/static-files.html
 app.use(express.static(path.resolve(__dirname, 'build')));
+// legacy privacy notice redirect
+app.get('/assets/pdf/bravoone-privacy-notice-2020-07-01.pdf', (req, res) => res.redirect('/assets/pdf/bravoone-privacy-notice.pdf'));
 
 app.get('*', (req, res) => res.redirect('404.html'));
 
